@@ -13,6 +13,7 @@
 		D45E760E238DAB1400AF5B8F /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D45E760D238DAB1400AF5B8F /* Preview Assets.xcassets */; };
 		D45E7611238DAB1400AF5B8F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D45E760F238DAB1400AF5B8F /* LaunchScreen.storyboard */; };
 		D45E7619238DAC8100AF5B8F /* LaunchList.swift in Sources */ = {isa = PBXBuildFile; fileRef = D45E7618238DAC8100AF5B8F /* LaunchList.swift */; };
+		D45E761C238DAD7A00AF5B8F /* Launch.swift in Sources */ = {isa = PBXBuildFile; fileRef = D45E761B238DAD7A00AF5B8F /* Launch.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,7 @@
 		D45E7610238DAB1400AF5B8F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		D45E7612238DAB1400AF5B8F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D45E7618238DAC8100AF5B8F /* LaunchList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LaunchList.swift; sourceTree = "<group>"; };
+		D45E761B238DAD7A00AF5B8F /* Launch.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Launch.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +58,7 @@
 		D45E7603238DAB1300AF5B8F /* SpaceX */ = {
 			isa = PBXGroup;
 			children = (
+				D45E761A238DAD4F00AF5B8F /* Model */,
 				D45E7604238DAB1300AF5B8F /* AppDelegate.swift */,
 				D45E7606238DAB1300AF5B8F /* SceneDelegate.swift */,
 				D45E7618238DAC8100AF5B8F /* LaunchList.swift */,
@@ -73,6 +76,14 @@
 				D45E760D238DAB1400AF5B8F /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		D45E761A238DAD4F00AF5B8F /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				D45E761B238DAD7A00AF5B8F /* Launch.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -148,6 +159,7 @@
 			files = (
 				D45E7605238DAB1300AF5B8F /* AppDelegate.swift in Sources */,
 				D45E7607238DAB1300AF5B8F /* SceneDelegate.swift in Sources */,
+				D45E761C238DAD7A00AF5B8F /* Launch.swift in Sources */,
 				D45E7619238DAC8100AF5B8F /* LaunchList.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
