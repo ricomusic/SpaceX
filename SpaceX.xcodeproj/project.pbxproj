@@ -21,6 +21,7 @@
 		D45E7633238DB62200AF5B8F /* launch.json in Resources */ = {isa = PBXBuildFile; fileRef = D45E7632238DB62200AF5B8F /* launch.json */; };
 		D45E7635238DBDD600AF5B8F /* Session.swift in Sources */ = {isa = PBXBuildFile; fileRef = D45E7634238DBDD600AF5B8F /* Session.swift */; };
 		D45E7637238DBDFF00AF5B8F /* URLSession+Session.swift in Sources */ = {isa = PBXBuildFile; fileRef = D45E7636238DBDFF00AF5B8F /* URLSession+Session.swift */; };
+		D45E7621238DB35B00AF5B8F /* JSONDecoder.swift in Sources */ = {isa = PBXBuildFile; fileRef = D45E7620238DB35B00AF5B8F /* JSONDecoder.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -42,6 +43,7 @@
 		D45E7632238DB62200AF5B8F /* launch.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = launch.json; sourceTree = "<group>"; };
 		D45E7634238DBDD600AF5B8F /* Session.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Session.swift; sourceTree = "<group>"; };
 		D45E7636238DBDFF00AF5B8F /* URLSession+Session.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "URLSession+Session.swift"; sourceTree = "<group>"; };
+		D45E7620238DB35B00AF5B8F /* JSONDecoder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JSONDecoder.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -74,6 +76,7 @@
 		D45E7603238DAB1300AF5B8F /* SpaceX */ = {
 			isa = PBXGroup;
 			children = (
+				D45E761F238DB34800AF5B8F /* Extensions */,
 				D45E761A238DAD4F00AF5B8F /* Model */,
 				D45E7604238DAB1300AF5B8F /* AppDelegate.swift */,
 				D45E7606238DAB1300AF5B8F /* SceneDelegate.swift */,
@@ -104,6 +107,14 @@
 				D45E7636238DBDFF00AF5B8F /* URLSession+Session.swift */,
 			);
 			path = Model;
+			sourceTree = "<group>";
+		};
+		D45E761F238DB34800AF5B8F /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				D45E7620238DB35B00AF5B8F /* JSONDecoder.swift */,
+			);
+			path = Extensions;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -177,6 +188,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D45E7621238DB35B00AF5B8F /* JSONDecoder.swift in Sources */,
 				D45E7605238DAB1300AF5B8F /* AppDelegate.swift in Sources */,
 				D45E7607238DAB1300AF5B8F /* SceneDelegate.swift in Sources */,
 				D45E761C238DAD7A00AF5B8F /* Launch.swift in Sources */,
