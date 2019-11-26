@@ -22,7 +22,19 @@
 		D45E7635238DBDD600AF5B8F /* Session.swift in Sources */ = {isa = PBXBuildFile; fileRef = D45E7634238DBDD600AF5B8F /* Session.swift */; };
 		D45E7637238DBDFF00AF5B8F /* URLSession+Session.swift in Sources */ = {isa = PBXBuildFile; fileRef = D45E7636238DBDFF00AF5B8F /* URLSession+Session.swift */; };
 		D45E7621238DB35B00AF5B8F /* JSONDecoder.swift in Sources */ = {isa = PBXBuildFile; fileRef = D45E7620238DB35B00AF5B8F /* JSONDecoder.swift */; };
+		D45E762B238DB5E500AF5B8F /* DecoderTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D45E762A238DB5E500AF5B8F /* DecoderTests.swift */; };
+		D45E7633238DB62200AF5B8F /* launch.json in Resources */ = {isa = PBXBuildFile; fileRef = D45E7632238DB62200AF5B8F /* launch.json */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		D45E762D238DB5E500AF5B8F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D45E75F9238DAB1300AF5B8F /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D45E7600238DAB1300AF5B8F;
+			remoteInfo = SpaceX;
+		};
+/* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		D45E7601238DAB1300AF5B8F /* SpaceX.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SpaceX.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -44,10 +56,21 @@
 		D45E7634238DBDD600AF5B8F /* Session.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Session.swift; sourceTree = "<group>"; };
 		D45E7636238DBDFF00AF5B8F /* URLSession+Session.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "URLSession+Session.swift"; sourceTree = "<group>"; };
 		D45E7620238DB35B00AF5B8F /* JSONDecoder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JSONDecoder.swift; sourceTree = "<group>"; };
+		D45E7628238DB5E500AF5B8F /* SpaceXTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SpaceXTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		D45E762A238DB5E500AF5B8F /* DecoderTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DecoderTests.swift; sourceTree = "<group>"; };
+		D45E762C238DB5E500AF5B8F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D45E7632238DB62200AF5B8F /* launch.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = launch.json; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		D45E75FE238DAB1300AF5B8F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D45E7625238DB5E500AF5B8F /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -61,6 +84,7 @@
 			isa = PBXGroup;
 			children = (
 				D45E7603238DAB1300AF5B8F /* SpaceX */,
+				D45E7629238DB5E500AF5B8F /* SpaceXTests */,
 				D45E7602238DAB1300AF5B8F /* Products */,
 			);
 			sourceTree = "<group>";
@@ -69,6 +93,7 @@
 			isa = PBXGroup;
 			children = (
 				D45E7601238DAB1300AF5B8F /* SpaceX.app */,
+				D45E7628238DB5E500AF5B8F /* SpaceXTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -117,6 +142,16 @@
 			path = Extensions;
 			sourceTree = "<group>";
 		};
+		D45E7629238DB5E500AF5B8F /* SpaceXTests */ = {
+			isa = PBXGroup;
+			children = (
+				D45E762A238DB5E500AF5B8F /* DecoderTests.swift */,
+				D45E762C238DB5E500AF5B8F /* Info.plist */,
+				D45E7632238DB62200AF5B8F /* launch.json */,
+			);
+			path = SpaceXTests;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -138,6 +173,24 @@
 			productReference = D45E7601238DAB1300AF5B8F /* SpaceX.app */;
 			productType = "com.apple.product-type.application";
 		};
+		D45E7627238DB5E500AF5B8F /* SpaceXTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D45E762F238DB5E500AF5B8F /* Build configuration list for PBXNativeTarget "SpaceXTests" */;
+			buildPhases = (
+				D45E7624238DB5E500AF5B8F /* Sources */,
+				D45E7625238DB5E500AF5B8F /* Frameworks */,
+				D45E7626238DB5E500AF5B8F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				D45E762E238DB5E500AF5B8F /* PBXTargetDependency */,
+			);
+			name = SpaceXTests;
+			productName = SpaceXTests;
+			productReference = D45E7628238DB5E500AF5B8F /* SpaceXTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -150,6 +203,10 @@
 				TargetAttributes = {
 					D45E7600238DAB1300AF5B8F = {
 						CreatedOnToolsVersion = 11.2.1;
+					};
+					D45E7627238DB5E500AF5B8F = {
+						CreatedOnToolsVersion = 11.2.1;
+						TestTargetID = D45E7600238DAB1300AF5B8F;
 					};
 				};
 			};
@@ -167,6 +224,7 @@
 			projectRoot = "";
 			targets = (
 				D45E7600238DAB1300AF5B8F /* SpaceX */,
+				D45E7627238DB5E500AF5B8F /* SpaceXTests */,
 			);
 		};
 /* End PBXProject section */
@@ -179,6 +237,14 @@
 				D45E7611238DAB1400AF5B8F /* LaunchScreen.storyboard in Resources */,
 				D45E760E238DAB1400AF5B8F /* Preview Assets.xcassets in Resources */,
 				D45E760B238DAB1400AF5B8F /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D45E7626238DB5E500AF5B8F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D45E7633238DB62200AF5B8F /* launch.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -219,7 +285,23 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		D45E7624238DB5E500AF5B8F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D45E762B238DB5E500AF5B8F /* DecoderTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		D45E762E238DB5E500AF5B8F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = D45E7600238DAB1300AF5B8F /* SpaceX */;
+			targetProxy = D45E762D238DB5E500AF5B8F /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		D45E760F238DAB1400AF5B8F /* LaunchScreen.storyboard */ = {
@@ -387,6 +469,46 @@
 			};
 			name = Release;
 		};
+		D45E7630238DB5E500AF5B8F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 3C4MKNJNJ6;
+				INFOPLIST_FILE = SpaceXTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = nu.ricomusic.SpaceXTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SpaceX.app/SpaceX";
+			};
+			name = Debug;
+		};
+		D45E7631238DB5E500AF5B8F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 3C4MKNJNJ6;
+				INFOPLIST_FILE = SpaceXTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = nu.ricomusic.SpaceXTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SpaceX.app/SpaceX";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -404,6 +526,15 @@
 			buildConfigurations = (
 				D45E7616238DAB1400AF5B8F /* Debug */,
 				D45E7617238DAB1400AF5B8F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D45E762F238DB5E500AF5B8F /* Build configuration list for PBXNativeTarget "SpaceXTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D45E7630238DB5E500AF5B8F /* Debug */,
+				D45E7631238DB5E500AF5B8F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
