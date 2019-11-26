@@ -8,7 +8,7 @@ struct LaunchList: View {
     }
 }
 
-struct LaunchList_Previews: PreviewProvider {
+struct LaunchListPreviews: PreviewProvider {
     static var previews: some View {
         LaunchList()
     }
