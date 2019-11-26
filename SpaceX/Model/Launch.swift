@@ -34,6 +34,7 @@ extension Launch: Decodable {
 private struct Links {
     let videoLink: URL
 }
+
 extension Links: Decodable {
     enum CodingKeys: String, CodingKey {
         case videoLink = "video_link"
