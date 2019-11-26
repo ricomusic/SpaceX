@@ -14,6 +14,13 @@
 		D45E7611238DAB1400AF5B8F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D45E760F238DAB1400AF5B8F /* LaunchScreen.storyboard */; };
 		D45E7619238DAC8100AF5B8F /* LaunchList.swift in Sources */ = {isa = PBXBuildFile; fileRef = D45E7618238DAC8100AF5B8F /* LaunchList.swift */; };
 		D45E761C238DAD7A00AF5B8F /* Launch.swift in Sources */ = {isa = PBXBuildFile; fileRef = D45E761B238DAD7A00AF5B8F /* Launch.swift */; };
+		D45E761E238DB12000AF5B8F /* API.swift in Sources */ = {isa = PBXBuildFile; fileRef = D45E761D238DB12000AF5B8F /* API.swift */; };
+		D45E761E238DB12000AF5B8F /* Endpoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = D45E761D238DB12000AF5B8F /* Endpoint.swift */; };
+		D45E7621238DB35B00AF5B8F /* JSONDecoder.swift in Sources */ = {isa = PBXBuildFile; fileRef = D45E7620238DB35B00AF5B8F /* JSONDecoder.swift */; };
+		D45E762B238DB5E500AF5B8F /* DecoderTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D45E762A238DB5E500AF5B8F /* DecoderTests.swift */; };
+		D45E7633238DB62200AF5B8F /* launch.json in Resources */ = {isa = PBXBuildFile; fileRef = D45E7632238DB62200AF5B8F /* launch.json */; };
+		D45E7635238DBDD600AF5B8F /* Session.swift in Sources */ = {isa = PBXBuildFile; fileRef = D45E7634238DBDD600AF5B8F /* Session.swift */; };
+		D45E7637238DBDFF00AF5B8F /* URLSession+Session.swift in Sources */ = {isa = PBXBuildFile; fileRef = D45E7636238DBDFF00AF5B8F /* URLSession+Session.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +33,15 @@
 		D45E7612238DAB1400AF5B8F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D45E7618238DAC8100AF5B8F /* LaunchList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LaunchList.swift; sourceTree = "<group>"; };
 		D45E761B238DAD7A00AF5B8F /* Launch.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Launch.swift; sourceTree = "<group>"; };
+		D45E761D238DB12000AF5B8F /* API.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = API.swift; sourceTree = "<group>"; };
+		D45E761D238DB12000AF5B8F /* Endpoint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Endpoint.swift; sourceTree = "<group>"; };
+		D45E7620238DB35B00AF5B8F /* JSONDecoder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JSONDecoder.swift; sourceTree = "<group>"; };
+		D45E7628238DB5E500AF5B8F /* SpaceXTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SpaceXTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		D45E762A238DB5E500AF5B8F /* DecoderTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DecoderTests.swift; sourceTree = "<group>"; };
+		D45E762C238DB5E500AF5B8F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D45E7632238DB62200AF5B8F /* launch.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = launch.json; sourceTree = "<group>"; };
+		D45E7634238DBDD600AF5B8F /* Session.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Session.swift; sourceTree = "<group>"; };
+		D45E7636238DBDFF00AF5B8F /* URLSession+Session.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "URLSession+Session.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -82,6 +98,10 @@
 			isa = PBXGroup;
 			children = (
 				D45E761B238DAD7A00AF5B8F /* Launch.swift */,
+				D45E761D238DB12000AF5B8F /* API.swift */,
+				D45E761D238DB12000AF5B8F /* Endpoint.swift */,
+				D45E7634238DBDD600AF5B8F /* Session.swift */,
+				D45E7636238DBDFF00AF5B8F /* URLSession+Session.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -161,6 +181,7 @@
 				D45E7607238DAB1300AF5B8F /* SceneDelegate.swift in Sources */,
 				D45E761C238DAD7A00AF5B8F /* Launch.swift in Sources */,
 				D45E7619238DAC8100AF5B8F /* LaunchList.swift in Sources */,
+				D45E761E238DB12000AF5B8F /* Endpoint.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
