@@ -4,8 +4,8 @@ import Foundation
 
 struct Launch {
     let flightNumber: Int?
-    let missionName: String? //
-    let launchDateUTC: Date? //
+    let missionName: String?
+    let launchDateUTC: Date?
     let launchSuccess: Bool?
     let videoLink: URL?
     let details: String?
