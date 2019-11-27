@@ -6,7 +6,7 @@ struct LaunchList: View {
     @ObservedObject var viewModel: LaunchListViewmodel
 
     init() {
-        self.viewModel = LaunchListViewmodel()
+        self.viewModel = LaunchListViewmodel(fetchInterval: .refreshRate)
     }
     var body: some View {
         NavigationView {
