@@ -9,9 +9,8 @@ struct LaunchDetail: View {
     }
     var body: some View {
         VStack {
-            Rectangle()
-                .fill(Color.green)
-                .frame(height: 200)
+            viewModel.videoRequest.map(WebView.init)
+                .frame(height: 300)
             VStack(alignment: .center) {
                 Text(viewModel.missionName).font(.title)
                 Text(viewModel.date).font(.caption)
@@ -19,6 +18,6 @@ struct LaunchDetail: View {
             Text(viewModel.details).font(.body)
             Spacer()
         }
-    .padding()
+        .padding()
     }
 }
