@@ -5,7 +5,7 @@ import WebKit
 
 struct WebView: UIViewRepresentable {
     typealias UIViewType = WKWebView
-    let request: URLRequest
+    let url: URL
     func makeUIView(context: UIViewRepresentableContext<WebView>) -> WKWebView {
         let config = WKWebViewConfiguration()
         config.allowsInlineMediaPlayback = true
@@ -13,6 +13,8 @@ struct WebView: UIViewRepresentable {
     }
 
     func updateUIView(_ uiView: WKWebView, context: UIViewRepresentableContext<WebView>) {
-        uiView.load(request)
+        _ = url.embedCode.map {
+            uiView.loadHTMLString($0, baseURL: nil)
+        }
     }
 }

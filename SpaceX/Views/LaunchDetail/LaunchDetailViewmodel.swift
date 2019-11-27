@@ -11,8 +11,8 @@ class LaunchDetailViewmodel: ObservableObject {
     }
 
     var details: String { launch.details ?? .noDetails }
-    var videoRequest: URLRequest? {
-        launch.videoLink.flatMap(URLRequest.videoRequest(_:))
+    var videoLink: URL? {
+        launch.videoLink
     }
     var title: String { launch.missionName ?? .empty }
 }
