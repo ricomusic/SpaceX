@@ -10,9 +10,9 @@ class LaunchDetailViewmodel: ObservableObject {
         self.launch = launch
     }
 
-    var details: String { launch.details ?? "No details available" }
+    var details: String { launch.details ?? .noDetails }
     var videoRequest: URLRequest? {
         launch.videoLink.flatMap(URLRequest.videoRequest(_:))
     }
-    var title: String { launch.missionName ?? "" }
+    var title: String { launch.missionName ?? .empty }
 }

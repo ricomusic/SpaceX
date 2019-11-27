@@ -14,13 +14,13 @@ class LaunchListRowViewmodel: ObservableObject {
         self.dateFormatter.dateStyle = .medium
     }
     var missionName: String {
-        launch.missionName ?? ""
+        launch.missionName ?? .empty
     }
     var flightNumber: String {
-        launch.flightNumber.map(String.init) ?? ""
+        launch.flightNumber.map(String.init) ?? .empty
     }
     var date: String {
-        launch.launchDateUTC.map(dateFormatter.string(from:)) ?? ""
+        launch.launchDateUTC.map(dateFormatter.string(from:)) ?? .empty
     }
     var destination: some View {
         let viewmodel = LaunchDetailViewmodel(launch: launch)

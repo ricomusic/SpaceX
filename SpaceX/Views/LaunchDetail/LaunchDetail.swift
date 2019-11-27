@@ -11,7 +11,7 @@ struct LaunchDetail: View {
         List {
             Section {
                 viewModel.videoRequest.map(WebView.init)
-                    .frame(height: 300)
+                    .frame(height: .videoHeight)
                 Text(viewModel.details).font(.body)
             }
         }

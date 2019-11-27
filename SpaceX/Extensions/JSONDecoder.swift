@@ -8,10 +8,10 @@ extension JSONDecoder {
         decoder.dateDecodingStrategy = .custom({ decoder -> Date in
             let container = try decoder.singleValueContainer()
             let dateString = try container.decode(String.self)
-            dateFormatter.dateFormat = "yyyy-MM-dd'T'HH:mm:ss.SSSZ"
+            dateFormatter.dateFormat = .utcDateFormat
             if let date = dateFormatter.date(from: dateString) { return date }
             throw DecodingError.dataCorruptedError(in: container,
-                                                   debugDescription: "Cannot decode date string \(dateString)")
+                                                   debugDescription: .dateParseError(dateString))
         })
         return decoder
     }

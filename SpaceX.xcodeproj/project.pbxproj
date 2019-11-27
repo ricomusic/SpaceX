@@ -14,6 +14,7 @@
 		D40CBD5D238E438D009BF3F8 /* WebView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D40CBD5C238E438D009BF3F8 /* WebView.swift */; };
 		D40CBD5F238E65CA009BF3F8 /* URLQueryItem+YouTube.swift in Sources */ = {isa = PBXBuildFile; fileRef = D40CBD5E238E65CA009BF3F8 /* URLQueryItem+YouTube.swift */; };
 		D40CBD61238E6674009BF3F8 /* URLRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = D40CBD60238E6674009BF3F8 /* URLRequest.swift */; };
+		D40CBD65238EB38B009BF3F8 /* Config.swift in Sources */ = {isa = PBXBuildFile; fileRef = D40CBD64238EB38B009BF3F8 /* Config.swift */; };
 		D45E7605238DAB1300AF5B8F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D45E7604238DAB1300AF5B8F /* AppDelegate.swift */; };
 		D45E7607238DAB1300AF5B8F /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D45E7606238DAB1300AF5B8F /* SceneDelegate.swift */; };
 		D45E760B238DAB1400AF5B8F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D45E760A238DAB1400AF5B8F /* Assets.xcassets */; };
@@ -50,6 +51,7 @@
 		D40CBD5C238E438D009BF3F8 /* WebView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebView.swift; sourceTree = "<group>"; };
 		D40CBD5E238E65CA009BF3F8 /* URLQueryItem+YouTube.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "URLQueryItem+YouTube.swift"; sourceTree = "<group>"; };
 		D40CBD60238E6674009BF3F8 /* URLRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = URLRequest.swift; sourceTree = "<group>"; };
+		D40CBD64238EB38B009BF3F8 /* Config.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Config.swift; sourceTree = "<group>"; };
 		D45E7601238DAB1300AF5B8F /* SpaceX.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SpaceX.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D45E7604238DAB1300AF5B8F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D45E7606238DAB1300AF5B8F /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -167,6 +169,7 @@
 				D45E7634238DBDD600AF5B8F /* Session.swift */,
 				D45E7636238DBDFF00AF5B8F /* URLSession+Session.swift */,
 				D45E763A238DC04000AF5B8F /* SpaceXAPI.swift */,
+				D40CBD64238EB38B009BF3F8 /* Config.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -346,6 +349,7 @@
 				D45E7607238DAB1300AF5B8F /* SceneDelegate.swift in Sources */,
 				D45E763F238DC26300AF5B8F /* LaunchListViewmodel.swift in Sources */,
 				D45E761C238DAD7A00AF5B8F /* Launch.swift in Sources */,
+				D40CBD65238EB38B009BF3F8 /* Config.swift in Sources */,
 				D45E7619238DAC8100AF5B8F /* LaunchList.swift in Sources */,
 				D40CBD55238E313D009BF3F8 /* LaunchListRow.swift in Sources */,
 				D40CBD58238E38DE009BF3F8 /* LaunchDetail.swift in Sources */,
