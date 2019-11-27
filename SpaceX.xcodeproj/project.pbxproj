@@ -11,6 +11,7 @@
 		D40CBD55238E313D009BF3F8 /* LaunchListRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = D40CBD54238E313D009BF3F8 /* LaunchListRow.swift */; };
 		D40CBD58238E38DE009BF3F8 /* LaunchDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = D40CBD57238E38DE009BF3F8 /* LaunchDetail.swift */; };
 		D40CBD5A238E38E9009BF3F8 /* LaunchDetailViewmodel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D40CBD59238E38E9009BF3F8 /* LaunchDetailViewmodel.swift */; };
+		D40CBD5D238E438D009BF3F8 /* WebView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D40CBD5C238E438D009BF3F8 /* WebView.swift */; };
 		D45E7605238DAB1300AF5B8F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D45E7604238DAB1300AF5B8F /* AppDelegate.swift */; };
 		D45E7607238DAB1300AF5B8F /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D45E7606238DAB1300AF5B8F /* SceneDelegate.swift */; };
 		D45E760B238DAB1400AF5B8F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D45E760A238DAB1400AF5B8F /* Assets.xcassets */; };
@@ -44,6 +45,7 @@
 		D40CBD54238E313D009BF3F8 /* LaunchListRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LaunchListRow.swift; sourceTree = "<group>"; };
 		D40CBD57238E38DE009BF3F8 /* LaunchDetail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LaunchDetail.swift; sourceTree = "<group>"; };
 		D40CBD59238E38E9009BF3F8 /* LaunchDetailViewmodel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LaunchDetailViewmodel.swift; sourceTree = "<group>"; };
+		D40CBD5C238E438D009BF3F8 /* WebView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebView.swift; sourceTree = "<group>"; };
 		D45E7601238DAB1300AF5B8F /* SpaceX.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SpaceX.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D45E7604238DAB1300AF5B8F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D45E7606238DAB1300AF5B8F /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -100,6 +102,14 @@
 				D40CBD59238E38E9009BF3F8 /* LaunchDetailViewmodel.swift */,
 			);
 			path = LaunchDetail;
+			sourceTree = "<group>";
+		};
+		D40CBD5B238E437F009BF3F8 /* WebView */ = {
+			isa = PBXGroup;
+			children = (
+				D40CBD5C238E438D009BF3F8 /* WebView.swift */,
+			);
+			path = WebView;
 			sourceTree = "<group>";
 		};
 		D45E75F8238DAB1300AF5B8F = {
@@ -178,6 +188,7 @@
 		D45E7640238DC27100AF5B8F /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				D40CBD5B238E437F009BF3F8 /* WebView */,
 				D40CBD56238E38D0009BF3F8 /* LaunchDetail */,
 				D40CBD51238E311A009BF3F8 /* LaunchListRow */,
 				D45E7641238DC28000AF5B8F /* LaunchList */,
@@ -319,6 +330,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				D45E7635238DBDD600AF5B8F /* Session.swift in Sources */,
+				D40CBD5D238E438D009BF3F8 /* WebView.swift in Sources */,
 				D45E7637238DBDFF00AF5B8F /* URLSession+Session.swift in Sources */,
 				D40CBD53238E3132009BF3F8 /* LaunchListRowViewmodel.swift in Sources */,
 				D45E7621238DB35B00AF5B8F /* JSONDecoder.swift in Sources */,
