@@ -8,16 +8,14 @@ struct LaunchDetail: View {
         self.viewModel = viewmodel
     }
     var body: some View {
-        VStack {
-            viewModel.videoRequest.map(WebView.init)
-                .frame(height: 300)
-            VStack(alignment: .center) {
-                Text(viewModel.missionName).font(.title)
-                Text(viewModel.date).font(.caption)
+        List {
+            Section {
+                viewModel.videoRequest.map(WebView.init)
+                    .frame(height: 300)
+                Text(viewModel.details).font(.body)
             }
-            Text(viewModel.details).font(.body)
-            Spacer()
         }
-        .padding()
+        .navigationBarTitle(viewModel.title)
+        .listStyle(GroupedListStyle())
     }
 }
