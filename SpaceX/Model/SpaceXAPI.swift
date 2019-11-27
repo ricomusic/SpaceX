@@ -8,9 +8,10 @@ struct SpaceXAPI {
     init(session: Session = URLSession.shared) {
         self.session = session
     }
-    func pastLaunches() -> AnyPublisher<[Launch], Error> {
+    func pastLaunches() -> AnyPublisher<[Launch], Never> {
         session.taskPublisher(for: Endpoint.request)
         .decode(type: [Launch].self, decoder: JSONDecoder.launchDecoder())
+        .replaceError(with: [])
         .eraseToAnyPublisher()
     }
 }

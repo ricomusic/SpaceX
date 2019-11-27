@@ -11,8 +11,7 @@ class LaunchListViewmodel: ObservableObject, Identifiable {
         api.pastLaunches()
             .receive(on: DispatchQueue.main)
             .eraseToAnyPublisher()
-            .sink(receiveCompletion: { _ in },
-                  receiveValue: { stuff in
+            .sink(receiveValue: { stuff in
                 let dateFormatter = DateFormatter()
                 self.launches = stuff.map {
                     LaunchListRowViewmodel(launch: $0, dateFormatter: dateFormatter)
