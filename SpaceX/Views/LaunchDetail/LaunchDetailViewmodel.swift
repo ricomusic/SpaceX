@@ -19,5 +19,7 @@ class LaunchDetailViewmodel: ObservableObject {
     var launchSuccess: Bool? { launch.launchSuccess }
     var videoLink: String { "Yeah" }
     var details: String { launch.details ?? "" }
-
+    var videoRequest: URLRequest? {
+        launch.videoLink.flatMap(URLRequest.videoRequest(_:))
+    }
 }
