@@ -22,4 +22,8 @@ class LaunchListRowViewmodel: ObservableObject {
     var date: String {
         launch.launchDateUTC.map(dateFormatter.string(from:)) ?? ""
     }
+    var destination: some View {
+        let viewmodel = LaunchDetailViewmodel(launch: launch)
+        return LaunchDetail(viewmodel)
+    }
 }

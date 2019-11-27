@@ -9,11 +9,13 @@ struct LaunchListRow: View {
         self.viewModel = viewModel
     }
     var body: some View {
-        HStack {
-            Text(viewModel.flightNumber)
-            Text(viewModel.missionName)
-            Spacer()
-            Text(viewModel.date)
+        NavigationLink(destination: viewModel.destination) {
+            HStack {
+                Text(viewModel.flightNumber)
+                Text(viewModel.missionName)
+                Spacer()
+                Text(viewModel.date)
+            }
         }
     }
 }
