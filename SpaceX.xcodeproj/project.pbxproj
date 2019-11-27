@@ -115,7 +115,6 @@
 				D45E761A238DAD4F00AF5B8F /* Model */,
 				D45E7604238DAB1300AF5B8F /* AppDelegate.swift */,
 				D45E7606238DAB1300AF5B8F /* SceneDelegate.swift */,
-				D45E7618238DAC8100AF5B8F /* LaunchList.swift */,
 				D45E760A238DAB1400AF5B8F /* Assets.xcassets */,
 				D45E760F238DAB1400AF5B8F /* LaunchScreen.storyboard */,
 				D45E7612238DAB1400AF5B8F /* Info.plist */,
@@ -170,6 +169,15 @@
 				D45E7641238DC28000AF5B8F /* LaunchList */,
 			);
 			path = Views;
+			sourceTree = "<group>";
+		};
+		D45E7641238DC28000AF5B8F /* LaunchList */ = {
+			isa = PBXGroup;
+			children = (
+				D45E7618238DAC8100AF5B8F /* LaunchList.swift */,
+				D45E763E238DC26300AF5B8F /* LaunchListViewmodel.swift */,
+			);
+			path = LaunchList;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -287,7 +295,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "if which swiftlint >/dev/null; then\n  swiftlint --strict\nelse\n  echo \"warning: SwiftLint not installed, download from https://github.com/realm/SwiftLint\"\nfi\n";
+			shellScript = "if which swiftlint >/dev/null; then\n  swiftlint\nelse\n  echo \"warning: SwiftLint not installed, download from https://github.com/realm/SwiftLint\"\nfi\n";
 		};
 /* End PBXShellScriptBuildPhase section */
 
@@ -303,6 +311,7 @@
 				D45E7605238DAB1300AF5B8F /* AppDelegate.swift in Sources */,
 				D45E763B238DC04000AF5B8F /* SpaceXAPI.swift in Sources */,
 				D45E7607238DAB1300AF5B8F /* SceneDelegate.swift in Sources */,
+				D45E763F238DC26300AF5B8F /* LaunchListViewmodel.swift in Sources */,
 				D45E761C238DAD7A00AF5B8F /* Launch.swift in Sources */,
 				D45E7619238DAC8100AF5B8F /* LaunchList.swift in Sources */,
 				D40CBD55238E313D009BF3F8 /* LaunchListRow.swift in Sources */,
