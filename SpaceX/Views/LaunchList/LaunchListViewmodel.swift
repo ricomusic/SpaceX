@@ -11,12 +11,8 @@ class LaunchListViewmodel: ObservableObject, Identifiable {
         api.pastLaunches()
             .receive(on: DispatchQueue.main)
             .eraseToAnyPublisher()
-            .sink(receiveCompletion: { stuff in
-                switch stuff {
-                case .failure(let error): print("OH NO! Error: \(error.localizedDescription)")
-                case .finished: print("OH YEAH! NO ERROR!")
-                }
-            }, receiveValue: { stuff in
+            .sink(receiveCompletion: { _ in },
+                  receiveValue: { stuff in
                 let dateFormatter = DateFormatter()
                 self.launches = stuff.map {
                     LaunchListRowViewmodel(launch: $0, dateFormatter: dateFormatter)
@@ -24,4 +20,5 @@ class LaunchListViewmodel: ObservableObject, Identifiable {
             })
             .store(in: &disposables)
     }
+    let title = "Dynamo SpaceX"
 }

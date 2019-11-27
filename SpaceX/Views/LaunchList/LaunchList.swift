@@ -14,7 +14,7 @@ struct LaunchList: View {
                 ForEach(viewModel.launches, id: \.flightNumber) { launch in
                     LaunchListRow(launch)
                 }
-            }
+            }.navigationBarTitle(viewModel.title)
         }
     }
 }
