@@ -31,10 +31,10 @@ class LaunchListViewmodel: ObservableObject, Identifiable {
         api.pastLaunches()
             .receive(on: DispatchQueue.main)
             .eraseToAnyPublisher()
-            .sink(receiveValue: { [weak self] stuff in
+            .sink(receiveValue: { [weak self] receivedLaunches in
                 let dateFormatter = DateFormatter()
-                self?.launches = stuff.map {
-                    LaunchListRowViewmodel(launch: $0, dateFormatter: dateFormatter)
+                self?.launches = receivedLaunches.map { launch in
+                    LaunchListRowViewmodel(launch: launch, dateFormatter: dateFormatter)
                 }
             })
             .store(in: &disposables)
