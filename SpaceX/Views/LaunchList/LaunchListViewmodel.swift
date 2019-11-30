@@ -20,19 +20,20 @@ class LaunchListViewmodel: ObservableObject, Identifiable {
             $0.cancel()
         }
     }
-
+    
     func startFetching(_ interval: TimeInterval) {
         timer = Timer.scheduledTimer(withTimeInterval: interval,
                                      repeats: true,
-                                     block: { _ in self.fetchLaunches() })
+                                     block: { [weak self] _ in
+                                        self?.fetchLaunches() })
     }
     func fetchLaunches() {
         api.pastLaunches()
             .receive(on: DispatchQueue.main)
             .eraseToAnyPublisher()
-            .sink(receiveValue: { stuff in
+            .sink(receiveValue: { [weak self] stuff in
                 let dateFormatter = DateFormatter()
-                self.launches = stuff.map {
+                self?.launches = stuff.map {
                     LaunchListRowViewmodel(launch: $0, dateFormatter: dateFormatter)
                 }
             })
